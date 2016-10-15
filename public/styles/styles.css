@@ -1,0 +1,72 @@
+body {
+  margin: 0 10px 0 10px;
+  background: url("/vendor/light_grey.png") top left repeat;
+}
+.container {
+  text-align: center;
+  margin: auto;
+  font-family: 'Happy Monkey', cursive;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+input {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid black;
+}
+button.complete.btn:focus, button.delete.btn:focus, button.undo.btn:focus,input:focus, button.btn.btn-block:focus {
+  outline:0;
+}
+
+input:focus {
+  border: 1px solid black;
+  box-shadow: 0 1px 5px #333333;
+}
+
+p  {
+ float: left;
+ text-align: left;
+ margin: 0;
+ padding: 7px 0 7px 0;
+}
+
+button {
+  right:0px;
+}
+
+button.delete {
+  margin-left: 10px;
+}
+
+li {
+    background: white;
+   border: 1px solid black;
+   box-shadow: 0 1px 7px #333333;
+   border-radius: 10px;
+   text-align: right;
+   margin: 10px 0 10px 0;
+   padding: 10px;
+}
+
+li:hover, button.btn.btn-block:hover {
+  position: relative; z-index: 999; -o-transform: scale(1.03,1.03); -ms-transform: scale(1.03,1.03); -moz-transform: scale(1.03,1.03); -webkit-transform: scale(1.03,1.03); transform: scale(1.03,1.03);
+}
+
+button.btn.btn-block, input {
+  height: 54px;
+  border-radius: 10px;
+}
+
+#completeList li {
+  box-shadow: 0 1px 7px #003300;
+}
+
+li * {
+display: inline-block;
+}

@@ -80,7 +80,7 @@ router.put('/:id', function (req, res) {
 
         } else {
           console.log("result.rows", result.rows);
-          //sens the updated information back to client.js so it can be appended 
+          //sens the updated information back to client.js so it can be appended
           res.send(result.rows);
         }
       });
@@ -106,10 +106,10 @@ router.delete('/:id', function(req,res) {
         function (err, result) {
           if (err) {
             console.log('Error querying database', err);
-            res.SendStatus(500);
+            res.sendStatus(500);
             return;
           }
-          res.send(204);
+          res.sendStatus(204);
         });
     } finally {
       done();

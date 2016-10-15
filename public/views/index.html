@@ -2,24 +2,50 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Weekend Challenge Four</title>
     <script src='/vendor/jquery.min.js'></script>
     <script src='/scripts/client.js'></script>
-    <link rel='stylesheet' href='styles/styles.css'  />
+    <link href="vendor/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <script src="vendor/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Happy+Monkey" rel="stylesheet">
   </head>
   <body>
-    <h1>To Do!</h1>
-    <form id="addTask">
-      <input type="text" id="task" name="task"/>
-      <button type="submit" name="submit">Add a Task</button>
+    <main class="container">
+    <div class="row">
+    <h1>Organize your Life!</h1>
+    <div class="col-xs-0 col-sm-1 col-md-2">
+    </div>
+    <form id="addTask" class="col-xs-12 col-sm-10 col-md-8">
+      <input type="text" id="task" name="task" class="form"/>
+      <button type="submit" name="submit" class="btn btn-block">Add a Task </button>
     </form>
+    <div class="col-xs-0 col-sm-1 col-md-2">
+    </div>
+    </div>
 
-    <h2>To Do:</h2>
-    <ul id="taskList">
+    <div class="row">
+      <h2>Tasks Left To Do:</h2>
+      <div class="col-xs-0 col-sm-1 col-md-2">
+      </div>
+    <ul id="taskList" class="col-xs-12 col-sm-10 col-md-8">
     </ul>
+    <div class="col-xs-0 col-sm-1 col-md-2">
+    </div>
+    </div>
 
-    <h2>Completed Tasks</h2>
-    <ul id="completeList">
+
+    <div class="row">
+      <h2>Completed Tasks:</h2>
+      <div class="col-xs-0 col-sm-1 col-md-2">
+      </div>
+    <ul id="completeList" class="col-xs-12 col-sm-10 col-md-8">
     </ul>
+    <div class="col-xs-0 col-sm-1 col-md-2">
+    </div>
+    </div>
+    </main>
   </body>
 </html>
