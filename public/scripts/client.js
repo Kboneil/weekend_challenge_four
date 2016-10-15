@@ -69,11 +69,15 @@ function deleteTask (event) {
   var $Id = $(this).data('id');
   console.log($Id);
 
+if(confirm("Are you sure you want to delete this task?")){
 $.ajax({
   type: 'DELETE',
   url: '/list/' + $Id,
   success: appendDom
 });
+} else {
+  alert('Your task was not deleted.');
+}
 }
 
 function completeTask(event){
@@ -85,7 +89,7 @@ function completeTask(event){
   var $button = $(this);
   var $task = $button.closest('li').find('p').text();
   //changes the boolean value and packages all the info of that entry into an object
-  //that will get sent to are server and updated in the database 
+  //that will get sent to are server and updated in the database
   var data = {task: $task, complete: true, id: $Id}
 
   console.log("data", data)
